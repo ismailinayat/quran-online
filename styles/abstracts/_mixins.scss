@@ -1,0 +1,145 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == 100 {
+    @media (max-width: 6.25em) { @content }
+  };
+  @if $breakpoint == 200 {
+    @media (max-width: 12.5em) { @content }
+  };
+  @if $breakpoint == 300 {
+    @media (max-width: 18.75em) { @content }
+  };
+  @if $breakpoint == 400 {
+    @media (max-width: 25em) { @content }
+  };
+  @if $breakpoint == 500 {
+    @media (max-width: 31.25em) { @content }
+  };
+  @if $breakpoint == 600 {
+    @media (max-width: 37.5em) { @content }
+  };
+  @if $breakpoint == 700 {
+    @media (max-width: 43.75em) { @content }
+  };
+  @if $breakpoint == 800 {
+    @media (max-width: 50em) { @content }
+  };
+  @if $breakpoint == 900 {
+    @media (max-width: 56.25em) { @content }
+  };
+  @if $breakpoint == 1000 {
+    @media (max-width: 62.5em) { @content }
+  };
+  @if $breakpoint == 1100 {
+    @media (max-width: 68.75em) { @content }
+  };
+  @if $breakpoint == 1200 {
+    @media (max-width: 75em) { @content }
+  };
+  @if $breakpoint == 1300 {
+    @media (max-width: 81.25em) { @content }
+  };
+  @if $breakpoint == 1400 {
+    @media (max-width: 87.5em) { @content }
+  };
+  @if $breakpoint == 1500 {
+    @media (max-width: 93.75em) { @content }
+  };
+
+  @if $breakpoint == 1600 {
+    @media (max-width: 100em) { @content }
+  };
+  @if $breakpoint == 1700 {
+    @media (max-width: 106.25em) { @content }
+  };
+  @if $breakpoint == 1800 {
+    @media (max-width: 112.5em) { @content }
+  };
+  @if $breakpoint == 1900 {
+    @media (max-width: 118.75em) { @content }
+  };
+  @if $breakpoint == 1950 {
+    @media (max-width: 121.875em) { @content }
+  };
+  @if $breakpoint == 2000 {
+    @media (min-width: 125em) { @content }
+  };
+
+};
+
+
+@mixin respondH($breakpoint) {
+  @if $breakpoint == 100 {
+    @media (max-height: 6.25em) { @content }
+  };
+  @if $breakpoint == 200 {
+    @media (max-height: 12.5em) { @content }
+  };
+  @if $breakpoint == 300 {
+    @media (max-height: 18.75em) { @content }
+  };
+  @if $breakpoint == 400 {
+    @media (max-height: 25em) { @content }
+  };
+  @if $breakpoint == 500 {
+    @media (max-height: 31.25em) { @content }
+  };
+  @if $breakpoint == 600 {
+    @media (max-height: 37.5em) { @content }
+  };
+  @if $breakpoint == 700 {
+    @media (max-height: 43.75em) { @content }
+  };
+  @if $breakpoint == 800 {
+    @media (max-height: 50em) { @content }
+  };
+  @if $breakpoint == 900 {
+    @media (max-height: 56.25em) { @content }
+  };
+
+  @if $breakpoint == 920 {
+    @media (max-height: 57.5em) { @content }
+  };
+  @if $breakpoint == 1000 {
+    @media (max-height: 62.5em) { @content }
+  };
+  @if $breakpoint == 1100 {
+    @media (max-height: 68.75em) { @content }
+  };
+  @if $breakpoint == 1200 {
+    @media (max-height: 75em) { @content }
+  };
+  @if $breakpoint == 1300 {
+    @media (max-height: 81.25em) { @content }
+  };
+  @if $breakpoint == 1400 {
+    @media (max-height: 87.5em) { @content }
+  };
+  @if $breakpoint == 1500 {
+    @media (min-height: 93.75em) { @content }
+  }
+
+};
+
+
+@mixin laptop {
+
+  @include respond(1950) {
+
+
+    @include respondH (1000) {
+
+        @content
+    }
+}
+
+};

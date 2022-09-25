@@ -1,0 +1,59 @@
+.about {
+
+    display: flex;
+    padding: 10rem;
+    &__left {
+
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        overflow: hidden;
+        &--container {
+
+            img {
+
+                width: 50rem;
+                height: 50rem;
+                object-fit: cover;
+                border-radius: 50%;
+
+            }
+        }
+    }
+
+    &__right {
+
+        width: 50%;
+        display: flex;
+        align-items: center;
+        &--container {
+            margin-left: 5rem;
+            .about__title {
+
+                h3 {
+
+                    font-size: 3.5rem;
+
+                }
+            }
+
+            .about__text {
+
+                margin-top: 2rem;
+                p {
+
+                    font-size: 1.6rem;
+                    max-width: 60rem;
+                    color: $colorFontText;
+
+                }
+            }
+
+            .about--button {
+
+                margin-top: 2rem;
+
+            }
+        }
+    }
+}

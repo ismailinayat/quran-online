@@ -1,0 +1,65 @@
+.navbar {
+
+    padding: 0 10rem;
+    height: 7rem;
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+
+
+        //margin-right: 35rem;
+        cursor: pointer;
+        h3 {
+            
+            font-size: 4rem;
+            color: $colorSecondaryLight;
+            span {
+                
+                color: $colorFontHeading;
+                font-size: 1.3rem;
+                font-style: italic;
+                
+            }
+        }
+    }
+    
+    .nav__links {
+        
+        transform: translateX(-5rem);
+        display: flex;
+
+        .link {
+
+            &:not(:last-child) {
+                
+                margin-right: 5rem;
+            }
+            a {
+                
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: $colorFontHeading;
+                font-weight: 500;
+                transition: all 0.2s;
+
+                &:hover {
+
+                    color: $colorSecondaryDark;
+                    border-bottom: 1px solid $colorSecondaryDark;
+                }
+            }
+
+        }
+    }
+
+    .contact__button {
+
+        justify-self: end;
+        button {
+
+
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.learn {
+
+    display: flex;
+    padding: 10rem;
+    &__left {
+
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        //align-items: center;
+        //justify-content: center;
+        margin-top: 5rem;
+        .learn__title {
+    
+            max-width: 70rem;
+            //text-align: center;
+            h3 {
+    
+                font-size: 3rem;
+
+            }
+        }
+    
+        .learn__text {
+    
+            margin-top: 2rem;
+            p {
+    
+                
+                font-size: 1.6rem;
+                color: $colorFontText;
+                max-width: 70rem;
+            }
+        }
+
+        .book__now {
+
+            //align-self: flex-start;
+
+            margin-top: 2rem;
+        }
+    }
+
+    &__right {
+
+        width: 50%;
+        
+        &--container {
+            
+            
+            border-radius: 3px;
+            overflow: hidden;
+            line-height: 0;
+            img {
+    
+                object-fit: cover;
+                width: 100%;
+                box-sizing: 3px;
+            }
+        }
+    }
+}

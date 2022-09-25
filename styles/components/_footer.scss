@@ -1,0 +1,41 @@
+.footer {
+
+    background-color: $colorSecondaryDark;
+    padding: 10rem;
+    color: $colorWhite;
+    &__title {
+
+        h3 {
+
+            font-size: 5rem;
+            text-align: center;
+
+        }
+    }
+
+    .contact__container {
+
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+        .contact {
+
+            font-size: 2rem;
+            .medium {
+
+                text-align: center;
+                margin-bottom: 3rem;
+
+                h3 {
+
+
+                }
+            }
+
+            .contact__medium__text {
+
+                border-bottom: 1px solid $colorWhite;
+            }
+        }
+    }
+}

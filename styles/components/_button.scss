@@ -1,0 +1,32 @@
+.btn {
+
+    padding: 1rem 2rem;
+    background-color: $colorWhite;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 1px solid $colorFontHeading;
+    font-weight: 500;
+    
+    
+    &:hover {
+        
+        transform: translateY(-2px);
+    }
+    
+    &:active {
+
+        transform: translateY(-1px);
+    }
+}
+
+.btn--primary {
+    
+    background-image: linear-gradient(to right, $colorSecondaryLight, $colorSecondaryDark);
+    color: $colorWhite;
+    font-weight: 200;
+    border: none;
+
+}
