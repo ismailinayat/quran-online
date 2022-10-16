@@ -3,12 +3,28 @@
     background-color: $colorSecondaryDark;
     padding: 10rem;
     color: $colorWhite;
+
+    @include respond (1000) {
+
+        padding: 10rem 5rem;
+    }
+
+    @include respond (800) {
+
+        padding: 10rem 2rem;
+    }
+
     &__title {
 
         h3 {
 
             font-size: 5rem;
             text-align: center;
+
+            @include respond (800) {
+
+                font-size: 4rem;
+            }
 
         }
     }
@@ -18,13 +34,30 @@
         margin-top: 3rem;
         display: flex;
         justify-content: space-around;
+
+        @include respond(600) {
+
+            flex-wrap: wrap;
+        }
         .contact {
 
             font-size: 2rem;
+
+            @include respond (600) {
+
+                display: block;
+
+                margin-bottom: 5rem;
+            }
             .medium {
 
                 text-align: center;
                 margin-bottom: 3rem;
+
+                @include respond (600) {
+
+                    margin-bottom: 1rem;
+                }
 
                 h3 {
 

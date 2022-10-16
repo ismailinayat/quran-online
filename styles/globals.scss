@@ -21,5 +21,19 @@
 @import "components/footer";
 @import "components/header";
 @import "components/learn";
+@import "components/mobilenavicon";
+@import "components/mobilenavigation";
 @import "components/navbar";
 
+.navbar__container__navigation {
+
+    
+    @include respond (600) {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+
+    }
+}

@@ -1,7 +1,24 @@
 .learn {
 
     display: flex;
+    gap:  5rem;
     padding: 10rem;
+
+    @include respond (1000) {
+
+        padding: 10rem 5rem;
+    }
+
+    @include respond (800) {
+
+        padding: 10rem 2rem
+    }
+
+    @include respond (600) {
+
+        flex-wrap:wrap ;
+    }
+
     &__left {
 
         width: 50%;
@@ -11,6 +28,11 @@
         //align-items: center;
         //justify-content: center;
         margin-top: 5rem;
+
+        @include respond (600) {
+
+            width: 100%
+        }
         .learn__title {
     
             max-width: 70rem;
@@ -45,6 +67,11 @@
     &__right {
 
         width: 50%;
+
+        @include respond (600) {
+
+            width: 100%
+        }
         
         &--container {
             
@@ -52,6 +79,10 @@
             border-radius: 3px;
             overflow: hidden;
             line-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
             img {
     
                 object-fit: cover;

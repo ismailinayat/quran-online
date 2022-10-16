@@ -1,0 +1,82 @@
+
+
+.mobile__nav--icon {
+    
+    display: none;
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+
+    cursor: pointer;
+
+    @include respond (600) {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation__icon--button {
+
+        cursor: pointer;
+        position: relative;
+
+
+    
+
+        .navigation__icon {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            &,
+            &::before,
+            &::after {
+
+                width: 3rem;
+                height: 2px;
+                background-color: black;
+                //display: inline-block;
+                transition: all 0.2s;
+            }
+
+            &::before {
+
+                content: "";
+                position: absolute;
+                top: 0.8rem;
+                width: 3rem;
+            }
+
+            &::after {
+
+                content: "";
+                position: absolute;
+                top: -0.8rem;
+                width: 3rem;
+            }
+
+
+        }
+
+    }
+
+    
+    .navigation__icon.open {
+
+        background-color: transparent !important;
+
+        &::before {
+
+            top: 0;
+            transform: rotate(-45deg);
+
+        }
+
+        &::after {
+
+            top: 0;
+            transform: rotate(-135deg);
+
+        }
+    }
+}

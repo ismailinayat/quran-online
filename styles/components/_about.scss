@@ -2,12 +2,34 @@
 
     display: flex;
     padding: 10rem;
+
+    @include respond (1000) {
+
+        padding: 10rem 5rem
+    }
+
+    @include respond (800) {
+        padding: 10rem 2rem;
+    }
+
+    @include respond(600) {
+
+        flex-wrap: wrap;
+    }
+
+
     &__left {
 
         display: flex;
         justify-content: center;
         width: 50%;
         overflow: hidden;
+
+        @include respond (600) {
+
+            width: 100%;
+        }
+
         &--container {
 
             img {
@@ -16,6 +38,12 @@
                 height: 50rem;
                 object-fit: cover;
                 border-radius: 50%;
+
+                @include respond (1000) {
+
+                    width: 40rem;
+                    height: 40rem;
+                }
 
             }
         }
@@ -26,8 +54,19 @@
         width: 50%;
         display: flex;
         align-items: center;
+
+        @include respond(600) {
+
+            width: 100%
+        }
+
         &--container {
             margin-left: 5rem;
+
+            @include respond (600) {
+
+                margin-left: 0;
+            }
             .about__title {
 
                 h3 {
